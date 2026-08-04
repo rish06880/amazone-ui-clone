@@ -1,0 +1,502 @@
+*{/*it  is basically a good practive before making any website to set margin at 0 propety we given in this is applied on whole page*/
+    margin:0;
+    font-family:Arial;/*big websites have thier own font-family we use similiar fonts that is arial*/
+    border:border-box/*by this the border of any content box not consider out of the box as normally consider,it  is consider inside the content box means if we increase the border then width height of box is not increase
+    normally border height width ke bhr waale area me add hota h 
+    lein agr hm chahe ki jitni hmne height width di h border usi me count ho mtlb agr border bdhaye to content area chota hoga na ki height or width bdhegi
+    it is not as muhc imp but is is a good practice to do with major project*/
+
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color:white;
+    display:flex;/*to make all the element ie.div in the same line*/
+    align-items: center;/*align items at the center along crossaxis in navbar*/
+    justify-content: space-evenly;/*to evenly spaced all element of navbar*/
+}
+
+
+.nav-logo{/*outer div for amazon logo*/
+    height:50px;
+    width: 114px;
+}
+
+.logo{/*div for amazon logo*/
+    background-image: url("amazon_logo.png");/*still amazon logo not shown on navbar as div is shown when we give it  height and width*/
+    height:50px;
+    width:100%;
+    background-size: cover;/*necessaryto give with background image*/
+
+}
+
+.border{/*to giver transparent box to navbar element when hover on them*/
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+
+/*box 2....address box*/
+
+.address-first{/*div for the deliever to text*/
+    font-size: 0.75rem;
+    color:#cccccc;
+    margin-left:20px;
+}
+
+.address-second{/*div for the icon and india text*/
+    font-size: 1rem;
+    display:flex; /*by which icon and text came on the same line*/
+}
+
+
+.india{
+    margin-left: 1.5px;
+    font-weight: bold;
+}
+
+/* now if we want to a white box when hoven on this address element just we need to do is that to add class name border in the vav-addrerss div,as the css property or style is already witeen with name border. */
+
+/* box 3....for searching item */
+
+.nav-search{
+    display:flex;/*to make icon and other text at the same line*/
+    justify-content: space-between;
+    width: 642px;
+    height: 40px;
+    background-color: #0f1111;
+    border-radius: 4px;
+}
+
+.search-select{
+    background-color: #e6e6e6;
+    width: 52px;
+    height:40px;
+    text-align:center;
+    padding:0px 0px 0px 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border:none
+    
+}
+
+.search-input{
+    width:100%;/*take all remained width from icon and select in the flex container of nav-search*/
+    border:none;
+    font-size: 1rem;
+}
+
+.search-icon{
+    width:45px;
+    background-color: #febd69;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.nav-search:hover{
+    border:1.5px solid #febd69;
+
+}
+
+/* similarly herer we also add border class name to the nav-serach class top give it a white box when hover */
+
+/* box4......language box */
+
+.lnaguage{
+    height:45px;
+    width:45px;
+    
+}
+
+.language-select{
+    color:white;
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: black;
+    border:none;
+}
+
+/* box5....signin account and list */
+
+
+.nav-signin{
+    width:130px;
+    height:50px;
+    color:#d6d6d6;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;/*this all we to tomake element at the center*/
+    
+    
+    
+    
+}
+
+.signin{
+    font-size:12px;
+
+
+}
+
+.account{
+    display:flex;
+
+}
+
+.account-list{
+    font-size: 14px;
+    font-weight: bolder;
+
+}
+
+.account-select{
+    color:white;
+    background-color: #0f1111;
+    border:none;
+
+}
+
+/* box6:....return/order */
+
+.nav-return{
+    width:80px;
+    height:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;/*this all we to tomake element at the center*/
+}
+
+.return{
+    font-size: 12px;
+    
+}
+
+.order{
+    font-size:14px;
+    font-weight: bolder;
+}
+
+/* box7....cart */
+
+.nav-cart i{/*here means given prop is applied only on the icons present in the navcart class*/
+    font-size:25px;
+
+}
+
+.nav-cart{
+    font-size:0.80rem;
+    font-weight:800;
+}
+
+/*navbar completed*/
+
+/*panel under navbar with options*/
+
+.panel{
+    color:white;
+    width:100%;
+    height:39px;
+    background-color: #232f3e;
+    display:flex;/*to take all the elemtns nsma eor optionson the same line*/
+    align-items: center;
+}
+
+.panel p{
+    display:inline;
+}
+
+.panel-all{
+    width:58px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.panel-options{
+    display:flex;
+    width: 500px;
+    font-size: 13px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+/*panel section completed*/
+
+/*hero-section*/
+
+.hero-section{
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+    height:300px;
+    display:flex; 
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.hero-msg{
+    height:40px;
+    color:black;
+    background-color: #f5f6f6;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    font-size:0.85rem; 
+    width:80%;
+    margin-bottom: 10px;;
+    font-weight: bold;
+
+}
+
+.hero-msg a{
+    color:#007185;
+}
+
+/*shop section ie shoping boxes*/
+
+.shop-section{
+    display:flex;/*to arrange all 4 boxes is same line*/
+    flex-wrap:wrap;
+    justify-content: space-evenly;/*to evenly separate the boxes*/
+    background-color: #e2e7e6;
+}
+
+.box{
+    /* border:2px solid black; */
+    height:400px;
+    width:23%;
+    background-color: white;
+    padding:20px 0px 15px;
+    margin-top: 20px;
+}
+
+.box1img{
+    background-image: url("box1_image.jpg");
+    background-size: cover;
+    height:300px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.box1-{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box1- p{
+    color:#007185;
+    font-size:0.80rem;
+    
+}
+
+.box2img{
+    background-image: url("box2_image.jpg");
+    background-size: cover;
+    height:300px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.box3img{
+    background-image: url("box3_image.jpg");
+    background-size: cover;
+    height:300px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.box4img{
+    background-image: url("box4_image.jpg");
+    background-size: cover;
+    height:300px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.box5img{
+    background-image: url("box5_image.jpg");
+    background-size: cover;
+    height:300px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.box6img{
+    background-image: url("box6_image.jpg");
+    background-size: cover;
+    height:300px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.box7img{
+    background-image: url("box7_image.jpg");
+    background-size: cover;
+    height:300px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.box8img{
+    background-image: url("box8_image.jpg");
+    background-size: cover;
+    height:300px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* footer section */
+
+footer{/*it is not the class name footer it is means the while footer*/
+
+    margin-top: 15px;
+
+}
+
+/* footer panel1 */
+
+.foot-panel1{
+    height: 49px;
+    background-color: #37475a;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.80rem;
+    font-weight: 500;
+}
+
+
+/* foot-panel 2 */
+
+.foot-panel2{
+    background-color: #232f3e;
+    height:400px;
+    color:white;
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+ul a{
+    display:block;/*this makes all the anchor tag in ul in next line*/
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+    color:#dddddd;
+    
+}
+
+ul p{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+
+.foot-panel3{
+    height:72px;
+    background-color: #232f3e;
+    border-top:0.1px solid #dddddd52;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.amazon-logo{
+    width:100px;
+    height: 42px;
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+}
+
+
+
+.english{
+    width:100px;
+    height: 30px;
+    color:#cccccc;
+    font-size: 13px;
+    /* margin: 0px 4px 0px 0px;
+    padding: 6px 18px 6px 8px; */
+    border: 1px solid #dddddd;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+
+.Indianrs{
+    width:100px;
+    height: 30px;
+    color:#cccccc;
+    font-size: 13px;
+    /* margin: 0px 4px 0px 0px;
+    padding: 6px 18px 6px 8px; */
+    border: 1px solid #dddddd;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.unitedstates{
+    width:100px;
+    height: 30px;
+    color:#cccccc;
+    font-size: 13px;
+    /* margin: 0px 4px 0px 0px;
+    padding: 6px 18px 6px 8px; */
+    border: 1px solid #dddddd;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.foot-panel4{
+    height:77px;
+    background-color: #131a22;
+    color:#dddddd;
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+
+.first{
+    width:1350px;
+    display:flex;
+    align-items: center;
+    justify-content: center ;
+    padding-top:12px;
+
+    
+}
+
+.first a{
+    padding-left: 15px;
+}
+
+.second{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7px;
+}
+
+
+
