@@ -20,5 +20,8 @@ A frontend clone of the Amazon homepage built using HTML and CSS.
 - organized HTML and CSS structure
 - provide comments in code for easy understanding
 
+## live demo...
+https://rish06880.github.io/amazone-ui-clone/
+
 ## Author...
 Rishabh Thakur
